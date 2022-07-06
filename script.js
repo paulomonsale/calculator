@@ -1,25 +1,26 @@
-const add = (x, y) => x + y;
-const subtract = (x, y) => x - y;
-const multiply = (x, y) => x * y;
-const divide = (x, y) => x / y;
+const add = (num1, num2) => num1 + num2;
+const subtract = (num1, num2) => num1 - num2;
+const multiply = (num1, num2) => num1 * num2;
+const divide = (num1, num2) => num1 / num2;
 
-function operate(operator, x, y) {
+function operate(operator, num1, num2) {
   let result = 0;
 
   switch(operator) {
     case '+':
-      result = add(x, y);
+      result = add(num1, num2);
       break;
     case '-':
-      result = subtract(x, y);
+      result = subtract(num1, num2);
       break;
     case '*':
-      result = multiply(x, y);
+      result = multiply(num1, num2);
       break;
     case '/':
-      result = divide(x, y);
+      result = divide(num1, num2);
       break;
+    default:
   }
-  
+
   return result;
 }
